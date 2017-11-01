@@ -4,7 +4,7 @@ pipeline:
     commands:
       - apt list --installed
       - apt update
-      - apt install git -y
+      - apt install git make -y
       - git clone https://github.com/eisoku9618/kuroiwa_demos.git
       - cd kuroiwa_demos/tex; ls; make
 
