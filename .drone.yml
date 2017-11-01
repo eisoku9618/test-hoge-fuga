@@ -3,6 +3,7 @@ pipeline:
     image: ubuntu:xenial
     commands:
       - apt list --installed
+      - apt update
       - apt install git
       - git clone https://github.com/eisoku9618/kuroiwa_demos.git
       - cd tex; make
