@@ -4,7 +4,7 @@ pipeline:
     commands:
       - apt list --installed
       - apt update
-      - apt install git make python3 -y
+      - apt install git make python3 texlive-lang-cjk texlive-xetex texlive-fonts-recommended -y
       - git clone https://github.com/eisoku9618/kuroiwa_demos.git
       - cd kuroiwa_demos/tex; ls; make
 
